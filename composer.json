@@ -1,0 +1,38 @@
+{
+    "name": "tinyframework/console",
+    "type": "framework",
+    "keywords": [
+        "php",
+        "framework"
+    ],
+    "description": "Console application for Tiny framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Faheem Anis",
+            "email": "faheem@cartzlink.com",
+            "homepage": "https://faheemanis.rf.gd/",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "tinyframework/contracts": ">=1.0.0",
+        "tinyframework/core": ">=1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "framework\\console\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

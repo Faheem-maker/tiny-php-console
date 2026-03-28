@@ -1,0 +1,32 @@
+# Environment Variables
+.env
+
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# PHPStorm and other IDEs
+idea/
+*.iml
+
+# Log files
+*.log
+
+# Cache and temporary files
+*.cache
+*.tmp
+*.swp
+
+# PHPUnit test results
+phpunit.result.cache
+
+# Backup files
+*.bak
+*.orig
+
+# System files
+DS_Store
+Thumbs.db
+
+# SASS/SCSS cache
+sass-cache/
