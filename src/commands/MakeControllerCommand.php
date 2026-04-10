@@ -8,6 +8,7 @@ use framework\console\Command;
 class MakeControllerCommand extends Command
 {
     public string $signature = 'make:controller';
+    public bool $rest = false;
 
     public function execute(Application $app, array $args): void
     {
@@ -39,7 +40,9 @@ class MakeControllerCommand extends Command
         }
 
         // Load template
-        $templatePath = __DIR__ . '/../templates/controller.tpl';
+        $templateName = $this->rest ? 'rest-controller.tpl' : 'controller.tpl';
+        $templatePath = __DIR__ . '/../templates/' . $templateName;
+
         if (!file_exists($templatePath)) {
             echo "Error: Controller template not found at '{$templatePath}'.\n";
             return;
