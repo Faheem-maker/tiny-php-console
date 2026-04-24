@@ -20,7 +20,7 @@ class ServeCommand extends Command
         echo "Press Ctrl+C to stop\n\n";
 
         $cmd = sprintf(
-            'php -S %s:%d -t %s',
+            'php -S %s:%d -t %s public/router.php',
             $host,
             $port,
             escapeshellarg($docRoot)
