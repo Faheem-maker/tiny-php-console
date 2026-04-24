@@ -13,7 +13,7 @@ class ServeCommand extends Command
     {
         $host = '127.0.0.1';
         $port = 8000;
-        $docRoot = getcwd();
+        $docRoot = getcwd() . DIRECTORY_SEPARATOR . 'public';
 
         echo "Starting PHP server at http://$host:$port\n";
         echo "Document root: $docRoot\n";
